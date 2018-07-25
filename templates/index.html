@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Hello World</h1>
+<div>
+    <ul>
+        <li>
+    <a href="{% url 'tango_with_django:index' %}">Tango with django</a>
+</li>
+<li>
+        <a href="{% url 'news:index' %}">News</a>
+    </li>
+</ul>
+</div>
+
+<div>
+ <h1>Form input from forms_example class </h1>
+
+ {% include "review.html" %}   
+
+</div>
+
+</body>
+</html> 
